@@ -6,6 +6,12 @@ Automate investments (model portfolios) offering.
 
 For development, you will only need Node.js, VS Code and Postman.
 
+### Add a .env file and paste this three line
+
+    DEFAULT_STOCK_PRICE=100
+    DECIMAL_POINT=3
+    PORT=3000
+
 ### Node
 
 - ### Node installation on Windows
