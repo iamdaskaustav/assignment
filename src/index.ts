@@ -22,7 +22,7 @@ app.get("/", (req: Request, res: Response) => {
 app.post("/order-allocate", (req: Request, res: Response): any => {
   console.time("response time:");
 
-  const { portfolio, totalAmount, orderType}: OrderRequest  = req.body;
+  const { portfolio, totalAmount, orderType }: OrderRequest = req.body;
 
   if (!portfolio || portfolio.length <= 0) {
     return res.status(400).send({
@@ -38,7 +38,6 @@ app.post("/order-allocate", (req: Request, res: Response): any => {
         "Please provide valid Total Amount format. Total amount should be greater than 0 and not negative.",
     });
   }
-
 
   let actuallyInvested: number = 0;
   let totalInvested: number = 0;
@@ -64,9 +63,6 @@ app.post("/order-allocate", (req: Request, res: Response): any => {
 
     const moneyAllocated = Number(amount);
 
-
-
-
     if (moneyAllocated < stockPrice * quantity) {
       quantity =
         Math.floor((amount / stockPrice) * Math.pow(10, decimalPoint)) /
@@ -85,13 +81,8 @@ app.post("/order-allocate", (req: Request, res: Response): any => {
       totalInvested: Number(totalInvested.toFixed(decimalPoint)),
     };
 
-
-
     return respo;
   });
-
-
-
 
   if (totalWeight > 100 || totalWeight <= 0 || notMentionWeight) {
     return res.status(400).send({

@@ -134,5 +134,5 @@ Expected Output:
 1. @types/express 5.0.0
 2. @types/node 22.8.7
 3. nodemon 3.1.7
-4. tsInode 0.9.2
+4. ts-node 0.9.2
 5. typescript 5.6.3
