@@ -63,17 +63,17 @@ Open Postman and import postman crul, change api payload if needed and then clic
     --data-raw '{
         "portfolio": [
             {
-                "symbol": "AAPL", // Stock Symbol
-                "weight": 51, // Stock percentage in portfolio
-                "currentPrice": 156 // Stock current market price
+                "symbol": "AAPL",
+                "weight": 51,
+                "currentPrice": 156
             },
             {
                 "symbol": "TSLA",
                 "weight": 45
             }
         ],
-        "orderType": "Buy", // Order Type
-        "totalAmount": 190 // Total amount invested by User
+        "orderType": "Buy",
+        "totalAmount": 190
     }'
 
 ## Api
@@ -89,17 +89,17 @@ Payload:
     {
         "portfolio": [
             {
-                "symbol": "AAPL",
-                "weight": 51,
-                "currentPrice": 156
+                "symbol": "AAPL", // Stock Symbol
+                "weight": 51, // Stock percentage in portfolio
+                "currentPrice": 156 // Stock current market price
             },
             {
                 "symbol": "TSLA",
                 "weight": 45
             }
         ],
-        "orderType": "Buy",
-        "totalAmount": 190
+        "orderType": "Buy", // Order Type
+        "totalAmount": 190 // Total amount invested by User
     }
 
 ### Sum of the weight of total stock should not be more than 100
